@@ -16,7 +16,7 @@ def show_credits():
     
 def get_guess(current_low, current_high):
 
-    guess = (high + low) // 2
+    guess = (current_high + current_low) // 2
     return guess 
     
     """
@@ -26,8 +26,13 @@ def get_guess(current_low, current_high):
 
 def pick_number():
 
+    print()
+    print()
     print("Pick a number between " + str(low) + " and " + str(high) + ". I will try and guess your number. ")
+    print()
     input("When you have your number, please press enter. ")
+    print()
+    print()
     
     """
     Ask the player to think of a number between low and high.
@@ -36,18 +41,20 @@ def pick_number():
     
 
 def check_guess(guess):
-
-    check = input("Was your number " + str(guess) + "? (too high, too low, correct) ")
-
-    if check == "too high":
+    print()
+    response = input("Was your number " + str(guess) + "? (too high, too low, correct) ")
+    print()
+    print()
+    
+    if response == "too high":
         check = 1
         return check
 
-    if check == "too low":
+    if response == "too low":
         check = -1
         return check
 
-    if check == "correct":
+    if response == "correct":
         check = 0
         return check
 
@@ -69,6 +76,7 @@ def show_result():
 def play_again():
     while True:
         decision = input("Would you like to play again? (y/n) ")
+        decision = decision.casefold()
 
         if decision == 'y' or decision == 'yes':
             return True
@@ -91,13 +99,14 @@ def play():
         if check == -1:
             # adjust current_low
             current_low = int(guess)
-            pass
+            
+            
         elif check == 1:
             # adjust current_high
             current_high = int(guess)
-            pass
+            
 
-    show_result(guess, rand)
+    show_result()
 
 
 # Game starts running here
@@ -111,5 +120,13 @@ while playing:
 
 show_credits()
 
+
+#end
+
+def show_credits():
+    print()
+    print("Goodbye.")
+    print()
+    print("Created by Manuela Cano.")
 
 
