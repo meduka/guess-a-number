@@ -1,15 +1,37 @@
 import random
+import math
 
 # config
 low = 1
-high = 1000
-
+high = 10
+limit_calc = (math.log(high,2))
+limit = math.ceil(limit_calc)
 
 # helper functions
 def show_start_screen():
-    print("*************************")
-    print("*  Guess a Number A.I!  *")
-    print("*************************")
+    
+    print("      _,---.                  ,----.    ,-,--.    ,-,--.           ,---.             .-._                           ___                  ,----.                .=-.-. ")
+    print("  _.='.'-,  \ .--.-. .-.-. ,-.--` , \ ,-.'-  _\ ,-.'-  _\        .--.'  \           /==/ \  .-._ .--.-. .-.-..-._ .'=.'\    _..---.   ,-.--` , \  .-.,.---.   /==/_ / ")
+    print(" /==.'-     //==/ -|/=/  ||==|-  _.-`/==/_ ,_.'/==/_ ,_.'        \==\-/\ \          |==|, \/ /, /==/ -|/=/  /==/ \|==|  | .' .'.-. \ |==|-  _.-` /==/  `   \ |==|, |  ")
+    print("/==/ -   .-' |==| ,||=| -||==|   `.-.\==\  \   \==\  \           /==/-|_\ |         |==|-  \|  ||==| ,||=| -|==|,|  / - |/==/- '=' / |==|   `.-.|==|-, .=., ||==|  |  ")
+    print("|==|_   /_,-.|==|- | =/  /==/_ ,    / \==\ -\   \==\ -\          \==\,   - \        |==| ,  | -||==|- | =/  |==|  \/  , ||==|-,   ' /==/_ ,    /|==|   '='  //==/. /  ")
+    print("|==|  , \_.' )==|,  \/ - |==|    .-'  _\==\ ,\  _\==\ ,\         /==/ -   ,|        |==| -   _ ||==|,  \/ - |==|- ,   _ ||==|  .=. \|==|    .-' |==|- ,   .' `--`-`   ")
+    print("\==\-  ,    (|==|-   ,   /==|_  ,`-._/==/\/ _ |/==/\/ _ |       /==/-  /\ - \       |==|  /\ , ||==|-   ,   /==| _ /\   |/==/- '=' ,|==|_  ,`-._|==|_  . ,'.  .=.     ")
+    print(" /==/ _  ,  //==/ , _  .'/==/ ,     /\==\ - , /\==\ - , /       \==\ _.\=\.-'       /==/, | |- |/==/ , _  .'/==/  / / , /==|   -   //==/ ,     //==/  /\ ,  ):=; :    ")
+    print(" `--`------' `--`..---'  `--`-----``  `--`---'  `--`---'         `--`               `--`./  `--``--`..---'  `--`./  `--``-._`.___,' `--`-----`` `--`-`--`--'  `=`     ")
+    print()
+    print()
+    print()
+                                                                                                                                 
+                                                                                                                                 
+    print(".---.                                  .           .                                              . .                .    .      ")
+    print("  | |                                 _|_          |                                             _|_|                |   _|_     ")
+    print("  | |--. .-.    .-..-..--.--. .,-..  . |  .-..--.  |.-. .--. .-.  .    ._.--.  .  ..-..  . .--.   | |--. .-..  . .-..|--. |  .--.")
+    print("  | |  |(.-'   (  (   )  |  | |   )  | | (.-'|     |-.' |  |(   )  \  /  `--.  |  (   )  | |      | |  |(   )  |(   ||  | |  `--.")
+    print("  ' '  `-`--'   `-'`-''  '  `-|`-'`--`-`-'`--'     '  `-'  `-`-' `' `'   `--'  `--|`-'`--`-'      `-'  `-`-'`--`-`-`|'  `-`-'`--'")
+    print("                              |                                                   ;                              ._.'            ")
+    print("                              '                                                `-'                                               ")
+
 
 def show_credits():
     pass
@@ -68,10 +90,27 @@ def check_guess(guess):
     """
 
 def show_result():
+
+    if check == 0:
+        print()
+        print("You win!")
+        print()
+        print()
+
+    else:
+        print()
+        print("Dang, I lost")
+        print()
+              
     """
     Says the result of the game. (The computer might always win.)
+
+
+        #still working on this, doesn't work. Check not defined
+        
     """
-    pass
+
+    pass 
 
 def play_again():
     while True:
@@ -89,21 +128,26 @@ def play():
     current_low = low
     current_high = high
     check = -1
+    tries = 0
     
     pick_number()
+
     
-    while check != 0:
+    
+    while check != 0 and tries < limit:
         guess = get_guess(current_low, current_high)
         check = check_guess(guess)
+        tries += 1
 
         if check == -1:
             # adjust current_low
             current_low = int(guess)
-            
+            tries += 1
             
         elif check == 1:
             # adjust current_high
             current_high = int(guess)
+            tries += 1
             
 
     show_result()
