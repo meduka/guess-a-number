@@ -1,4 +1,3 @@
-import random
 import math
 
 # config
@@ -33,8 +32,6 @@ def show_start_screen():
     print("                              '                                                `-'                                               ")
 
 
-def show_credits():
-    pass
     
 def get_guess(current_low, current_high):
 
@@ -50,7 +47,7 @@ def pick_number():
 
     print()
     print()
-    print("Pick a number between " + str(low) + " and " + str(high) + ". I will try and guess your number. ")
+    print("Pick a number between " + str(low) + " and " + str(high) + ". I will try and guess your number in " + str(limit) + " tries.")
     print()
     input("When you have your number, please press enter. ")
     print()
@@ -58,7 +55,7 @@ def pick_number():
     
     """
     Ask the player to think of a number between low and high.
-    Then  wait until the player presses enter. [X]
+    Then  wait until the player presses enter. 
     """
     
 
@@ -89,13 +86,14 @@ def check_guess(guess):
              1 if the guess was too high
     """
 
-def show_result():
-
+def show_result(check, tries):
+    
     if check == 0:
         print()
-        print("You win!")
+        print("I win! I guessed in " + str(tries) + " time(s)!")
         print()
         print()
+        
 
     else:
         print()
@@ -104,13 +102,10 @@ def show_result():
               
     """
     Says the result of the game. (The computer might always win.)
-
-
-        #still working on this, doesn't work. Check not defined
-        
+  
     """
 
-    pass 
+     
 
 def play_again():
     while True:
@@ -148,9 +143,11 @@ def play():
             # adjust current_high
             current_high = int(guess)
             tries += 1
+
+            
             
 
-    show_result()
+    show_result(check, tries)
 
 
 # Game starts running here
