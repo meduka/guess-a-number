@@ -59,7 +59,8 @@ def pick_number():
     """
     
 
-def check_guess(guess):
+def check_guess(guess, tries, limit):
+    print("TRY NUMBER: " + str(tries) + " out of " + str(limit))
     print()
     response = input("Was your number " + str(guess) + "? (too high, too low, correct) ")
     print()
@@ -131,23 +132,39 @@ def play():
     
     while check != 0 and tries < limit:
         guess = get_guess(current_low, current_high)
-        check = check_guess(guess)
-        tries += 1
+        check = check_guess(guess, tries, limit)
+        
 
         if check == -1:
             # adjust current_low
             current_low = int(guess)
-            tries += 1
+            
             
         elif check == 1:
             # adjust current_high
             current_high = int(guess)
-            tries += 1
+
+
+        tries += 1
 
             
             
 
     show_result(check, tries)
+
+
+def show_credits():
+    print()
+    print("Created by Manuela.")
+    print()
+    print()
+    print(" ######    #######   #######  ########  ########  ##    ## ########") 
+    print("##    ##  ##     ## ##     ## ##     ## ##     ##  ##  ##  ##      ")  
+    print("##        ##     ## ##     ## ##     ## ##     ##   ####   ##      ")  
+    print("##   #### ##     ## ##     ## ##     ## ########     ##    ######  ")  
+    print("##    ##  ##     ## ##     ## ##     ## ##     ##    ##    ##      ") 
+    print("##    ##  ##     ## ##     ## ##     ## ##     ##    ##    ##      ") 
+    print(" ######    #######   #######  ########  ########     ##    ########") 
 
 
 # Game starts running here
@@ -164,10 +181,5 @@ show_credits()
 
 #end
 
-def show_credits():
-    print()
-    print("Goodbye.")
-    print()
-    print("Created by Manuela Cano.")
 
 
