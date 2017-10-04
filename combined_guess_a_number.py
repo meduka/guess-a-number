@@ -5,19 +5,13 @@ def show_choose_screen():
     choose_game = input("Please choose which game you would like to play. (A)Guess what number the computer is thinking. (B)Have the computer guess a number that you think of.")
 
     if choose_game == "A":
-        choose_game = 1 
-        return choose_game
-
-        if choose_game == 1:
-            play_human()
+    
+        play_human()
    
         
     if choose_game == "B":
-        choose_game = 2
-        return choose_game
-
-        if choose_game == 2:
-            play_ai()
+    
+         play_ai()
 
 
 
