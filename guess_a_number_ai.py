@@ -66,15 +66,15 @@ def check_guess(guess, tries, limit):
     print()
     print()
     
-    if response == "too high":
+    if response == "too high" or response == "h" or response == "high" or response == "down":
         check = 1
         return check
 
-    if response == "too low":
+    if response == "too low" or response == "l" or response == "low" or response == "up":
         check = -1
         return check
 
-    if response == "correct":
+    if response == "correct" or response == "yes" or response == "y" or response == "yeah":
         check = 0
         return check
 
