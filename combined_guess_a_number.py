@@ -4,15 +4,15 @@ import random
 def show_choose_screen():
     
     choose_game = input("Please choose which game you would like to play. (A)Guess what number the computer is thinking. (B)Have the computer guess a number that you think of.")
-
-    if choose_game == "A":
+    
+    if choose_game == "A" or choose_game == "a" :
     
         play_human()
         print()
         print()
    
         
-    if choose_game == "B":
+    if choose_game == "B" or choose_game == "b":
     
          play_ai()
          print()
@@ -39,11 +39,7 @@ def show_start_screen():
     print()
     print()
     
-def show_credits():
-    print()
-    print("Goodbye.")
-    print()
-    print("Created by Manuela Cano.")
+
     
 def get_guess():
     while True:
@@ -57,7 +53,7 @@ def get_guess():
             print("You must enter a number.")
             print()
 
-def pick_number():
+def pick_number(low, high, limit):
 
     print()
     print()
@@ -133,11 +129,16 @@ def play_again():
         print()
         print()
 
-def play():
+def play(guess, tries):
     guess = -1
     tries = 0
 
-    rand = pick_number()
+    low = 1
+    high = 10
+    limit_calc = (math.log(high,2))
+    limit = math.ceil(limit_calc)
+
+    rand = pick_number(low, high, limit)
     
     while guess != rand and tries < limit:
         guess = get_guess()
@@ -275,6 +276,7 @@ def play_again_b():
             return False
         else:
             print("I don't understand. Please enter 'y' or 'n'.")
+            
 
 def play_b(low, high, limit):
     current_low = low
@@ -308,6 +310,12 @@ def play_b(low, high, limit):
 
     show_result_b(check, tries)
 
+def show_credits():
+    print()
+    print("Goodbye.")
+    print()
+    print("Created by Manuela Cano.")
+
 """
 
 AI GAME FUNCTIONS END
@@ -331,22 +339,34 @@ def play_ai():
     while playing:
         play_b(low, high, limit)
         playing = play_again_b()
+        
+    show_credits()
+
 
 
 
 def play_human():
+    
     low = 1
     high = 10
     limit_calc = (math.log(high,2))
     limit = math.ceil(limit_calc)
+    
+    guess = -1
+    tries = 0
 
     show_start_screen()
+    play(guess, tries)
+    play_again()
 
     playing = True
 
     while playing:
-        play()
+        play(guess, tries)
         playing = play_again()
+        
+    show_credits()
+
 
 
 
