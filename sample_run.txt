@@ -1,0 +1,224 @@
+Guess a Number AI Sample Run:
+
+
+
+
+
+
+
+
+
+      _,---.                  ,----.    ,-,--.    ,-,--.           ,---.             .-._                           ___                  ,----.                .=-.-. 
+  _.='.'-,  \ .--.-. .-.-. ,-.--` , \ ,-.'-  _\ ,-.'-  _\        .--.'  \           /==/ \  .-._ .--.-. .-.-..-._ .'=.'\    _..---.   ,-.--` , \  .-.,.---.   /==/_ / 
+ /==.'-     //==/ -|/=/  ||==|-  _.-`/==/_ ,_.'/==/_ ,_.'        \==\-/\ \          |==|, \/ /, /==/ -|/=/  /==/ \|==|  | .' .'.-. \ |==|-  _.-` /==/  `   \ |==|, |  
+/==/ -   .-' |==| ,||=| -||==|   `.-.\==\  \   \==\  \           /==/-|_\ |         |==|-  \|  ||==| ,||=| -|==|,|  / - |/==/- '=' / |==|   `.-.|==|-, .=., ||==|  |  
+|==|_   /_,-.|==|- | =/  /==/_ ,    / \==\ -\   \==\ -\          \==\,   - \        |==| ,  | -||==|- | =/  |==|  \/  , ||==|-,   ' /==/_ ,    /|==|   '='  //==/. /  
+|==|  , \_.' )==|,  \/ - |==|    .-'  _\==\ ,\  _\==\ ,\         /==/ -   ,|        |==| -   _ ||==|,  \/ - |==|- ,   _ ||==|  .=. \|==|    .-' |==|- ,   .' `--`-`   
+\==\-  ,    (|==|-   ,   /==|_  ,`-._/==/\/ _ |/==/\/ _ |       /==/-  /\ - \       |==|  /\ , ||==|-   ,   /==| _ /\   |/==/- '=' ,|==|_  ,`-._|==|_  . ,'.  .=.     
+ /==/ _  ,  //==/ , _  .'/==/ ,     /\==\ - , /\==\ - , /       \==\ _.\=\.-'       /==/, | |- |/==/ , _  .'/==/  / / , /==|   -   //==/ ,     //==/  /\ ,  ):=; :    
+ `--`------' `--`..---'  `--`-----``  `--`---'  `--`---'         `--`               `--`./  `--``--`..---'  `--`./  `--``-._`.___,' `--`-----`` `--`-`--`--'  `=`     
+
+
+
+.---.                                  .           .                                              . .                .    .      
+  | |                                 _|_          |                                             _|_|                |   _|_     
+  | |--. .-.    .-..-..--.--. .,-..  . |  .-..--.  |.-. .--. .-.  .    ._.--.  .  ..-..  . .--.   | |--. .-..  . .-..|--. |  .--.
+  | |  |(.-'   (  (   )  |  | |   )  | | (.-'|     |-.' |  |(   )  \  /  `--.  |  (   )  | |      | |  |(   )  |(   ||  | |  `--.
+  ' '  `-`--'   `-'`-''  '  `-|`-'`--`-`-'`--'     '  `-'  `-`-' `' `'   `--'  `--|`-'`--`-'      `-'  `-`-'`--`-`-`|'  `-`-'`--'
+                              |                                                   ;                              ._.'            
+                              '                                                `-'                                               
+
+
+Pick a number between 1 and 100. I will try and guess your number in 7 tries.
+
+When you have your number, please press enter. 
+
+
+TRY NUMBER: 0 out of 7
+
+Was your number 50? (too high, too low, correct) too high
+
+
+TRY NUMBER: 1 out of 7
+
+Was your number 25? (too high, too low, correct) too high
+
+
+TRY NUMBER: 2 out of 7
+
+Was your number 13? (too high, too low, correct) too high
+
+
+TRY NUMBER: 3 out of 7
+
+Was your number 7? (too high, too low, correct) too low
+
+
+TRY NUMBER: 4 out of 7
+
+Was your number 10? (too high, too low, correct) correct
+
+
+
+I win! I guessed in 5 time(s)!
+
+
+Would you like to play again? (y/n) y
+
+
+Pick a number between 1 and 100. I will try and guess your number in 7 tries.
+
+When you have your number, please press enter. 
+
+
+TRY NUMBER: 0 out of 7
+
+Was your number 50? (too high, too low, correct) too low
+
+
+TRY NUMBER: 1 out of 7
+
+Was your number 75? (too high, too low, correct) too high
+
+
+TRY NUMBER: 2 out of 7
+
+Was your number 62? (too high, too low, correct) too low
+
+
+TRY NUMBER: 3 out of 7
+
+Was your number 68? (too high, too low, correct) too low
+
+
+TRY NUMBER: 4 out of 7
+
+Was your number 71? (too high, too low, correct) correct
+
+
+
+I win! I guessed in 5 time(s)!
+
+
+Would you like to play again? (y/n) n
+
+Created by Manuela.
+
+
+ ######    #######   #######  ########  ########  ##    ## ########
+##    ##  ##     ## ##     ## ##     ## ##     ##  ##  ##  ##      
+##        ##     ## ##     ## ##     ## ##     ##   ####   ##      
+##   #### ##     ## ##     ## ##     ## ########     ##    ######  
+##    ##  ##     ## ##     ## ##     ## ##     ##    ##    ##      
+##    ##  ##     ## ##     ## ##     ## ##     ##    ##    ##      
+ ######    #######   #######  ########  ########     ##    ########
+
+
+
+
+
+
+
+
+
+
+Combined Games Sample Run:
+
+
+
+
+
+
+
+
+
+
+Please choose which game you would like to play. (A)Guess what number the computer is thinking. (B)Have the computer guess a number that you think of.A
+
+
+   GGGG  UU   UU EEEEEEE  SSSSS   SSSSS       AAA      NN   NN UU   UU MM    MM BBBBB   EEEEEEE RRRRRR  !!! !!! 
+  GG  GG UU   UU EE      SS      SS          AAAAA     NNN  NN UU   UU MMM  MMM BB   B  EE      RR   RR !!! !!! 
+ GG      UU   UU EEEEE    SSSSS   SSSSS     AA   AA    NN N NN UU   UU MM MM MM BBBBBB  EEEEE   RRRRRR  !!! !!!
+ GG   GG UU   UU EE           SS      SS    AAAAAAA    NN  NNN UU   UU MM    MM BB   BB EE      RR  RR          
+  GGGGGG  UUUUU  EEEEEEE  SSSSS   SSSSS     AA   AA    NN   NN  UUUUU  MM    MM BBBBBB  EEEEEEE RR   RR !!! !!!
+
+
+
+
+
+
+I'm thinking of a number from 1 to 10.
+
+
+You will get 4 tries. Good luck.
+
+
+Guess a number: 5
+You guessed too low.
+
+Guess a number: 7
+You guessed too low.
+
+Guess a number: 9
+
+You win!
+
+
+/$$$$$$   /$$$$$$  /$$   /$$  /$$$$$$  /$$$$$$$   /$$$$$$   /$$$$$$  /$$   /$$ /$$        /$$$$$$  /$$$$$$$$ /$$$$$$  /$$$$$$  /$$   /$$  /$$$$$$  /$$
+/$$__  $$ /$$__  $$| $$$ | $$ /$$__  $$| $$__  $$ /$$__  $$ /$$__  $$| $$  | $$| $$       /$$__  $$|__  $$__/|_  $$_/ /$$__  $$| $$$ | $$ /$$__  $$| $$
+| $$  \__/| $$  \ $$| $$$$| $$| $$  \__/| $$  \ $$| $$  \ $$| $$  \__/| $$  | $$| $$      | $$  \ $$   | $$     | $$  | $$  \ $$| $$$$| $$| $$  \__/| $$
+| $$      | $$  | $$| $$ $$ $$| $$ /$$$$| $$$$$$$/| $$$$$$$$| $$ /$$$$| $$  | $$| $$      | $$$$$$$$   | $$     | $$  | $$  | $$| $$ $$ $$|  $$$$$$ | $$
+| $$      | $$  | $$| $$  $$$$| $$|_  $$| $$__  $$| $$__  $$| $$|_  $$| $$  | $$| $$      | $$__  $$   | $$     | $$  | $$  | $$| $$  $$$$ \____  $$|__/
+| $$    $$| $$  | $$| $$\  $$$| $$  \ $$| $$  \ $$| $$  | $$| $$  \ $$| $$  | $$| $$      | $$  | $$   | $$     | $$  | $$  | $$| $$\  $$$ /$$  \ $$    
+|  $$$$$$/|  $$$$$$/| $$ \  $$|  $$$$$$/| $$  | $$| $$  | $$|  $$$$$$/|  $$$$$$/| $$$$$$$$| $$  | $$   | $$    /$$$$$$|  $$$$$$/| $$ \  $$|  $$$$$$/ /$$
+\______/  \______/ |__/  \__/ \______/ |__/  |__/|__/  |__/ \______/  \______/ |________/|__/  |__/   |__/   |______/ \______/ |__/  \__/ \______/ |__/
+
+
+
+Would you like to play again? (y/n) n
+
+
+
+
+
+
+
+
+
+Please choose which game you would like to play. (A)Guess what number the computer is thinking. (B)Have the computer guess a number that you think of.B
+      _,---.                  ,----.    ,-,--.    ,-,--.           ,---.             .-._                           ___                  ,----.                .=-.-. 
+  _.='.'-,  \ .--.-. .-.-. ,-.--` , \ ,-.'-  _\ ,-.'-  _\        .--.'  \           /==/ \  .-._ .--.-. .-.-..-._ .'=.'\    _..---.   ,-.--` , \  .-.,.---.   /==/_ / 
+ /==.'-     //==/ -|/=/  ||==|-  _.-`/==/_ ,_.'/==/_ ,_.'        \==\-/\ \          |==|, \/ /, /==/ -|/=/  /==/ \|==|  | .' .'.-. \ |==|-  _.-` /==/  `   \ |==|, |  
+/==/ -   .-' |==| ,||=| -||==|   `.-.\==\  \   \==\  \           /==/-|_\ |         |==|-  \|  ||==| ,||=| -|==|,|  / - |/==/- '=' / |==|   `.-.|==|-, .=., ||==|  |  
+|==|_   /_,-.|==|- | =/  /==/_ ,    / \==\ -\   \==\ -\          \==\,   - \        |==| ,  | -||==|- | =/  |==|  \/  , ||==|-,   ' /==/_ ,    /|==|   '='  //==/. /  
+|==|  , \_.' )==|,  \/ - |==|    .-'  _\==\ ,\  _\==\ ,\         /==/ -   ,|        |==| -   _ ||==|,  \/ - |==|- ,   _ ||==|  .=. \|==|    .-' |==|- ,   .' `--`-`   
+\==\-  ,    (|==|-   ,   /==|_  ,`-._/==/\/ _ |/==/\/ _ |       /==/-  /\ - \       |==|  /\ , ||==|-   ,   /==| _ /\   |/==/- '=' ,|==|_  ,`-._|==|_  . ,'.  .=.     
+ /==/ _  ,  //==/ , _  .'/==/ ,     /\==\ - , /\==\ - , /       \==\ _.\=\.-'       /==/, | |- |/==/ , _  .'/==/  / / , /==|   -   //==/ ,     //==/  /\ ,  ):=; :    
+ `--`------' `--`..---'  `--`-----``  `--`---'  `--`---'         `--`               `--`./  `--``--`..---'  `--`./  `--``-._`.___,' `--`-----`` `--`-`--`--'  `=`     
+
+
+
+.---.                                  .           .                                              . .                .    .      
+  | |                                 _|_          |                                             _|_|                |   _|_     
+  | |--. .-.    .-..-..--.--. .,-..  . |  .-..--.  |.-. .--. .-.  .    ._.--.  .  ..-..  . .--.   | |--. .-..  . .-..|--. |  .--.
+  | |  |(.-'   (  (   )  |  | |   )  | | (.-'|     |-.' |  |(   )  \  /  `--.  |  (   )  | |      | |  |(   )  |(   ||  | |  `--.
+  ' '  `-`--'   `-'`-''  '  `-|`-'`--`-`-'`--'     '  `-'  `-`-' `' `'   `--'  `--|`-'`--`-'      `-'  `-`-'`--`-`-`|'  `-`-'`--'
+                              |                                                   ;                              ._.'            
+                              '                                                `-'                                               
+
+
+Pick a number between 1 and 10. I will try and guess your number in 4 tries.
+
+When you have your number, please press enter. 
+
+
+TRY NUMBER: 0 out of 4
+
+Was your number 5? (too high, too low, correct) correct
+
+
+
+I win! I guessed in 1 time(s)!
+
+
+Would you like to play again? (y/n) n
